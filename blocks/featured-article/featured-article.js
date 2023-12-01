@@ -1,6 +1,14 @@
 import {
-  getMetadata,
-} from '../../scripts/lib-franklin.js';
+  createOptimizedPicture,
+} from '../../scripts/aem.js';
+
+const getMetadata = (name, doc) => {
+  const attr = name && name.includes(':') ? 'property' : 'name';
+  const meta = [...doc.head.querySelectorAll(`meta[${attr}="${name}"]`)]
+    .map((m) => m.content)
+    .join(', ');
+  return meta || '';
+};
 
 /**
  * Loads a fragment.
@@ -28,9 +36,11 @@ export default async function decorate($block) {
   if (!doc) {
     return;
   }
+
   // find metadata
   const title = getMetadata('og:title', doc);
   const desc = getMetadata('og:description', doc);
+  const picture = getMetadata('og:image', doc);
 
   const $pre = document.createElement('p');
   $pre.classList.add('pretitle');
@@ -53,7 +63,7 @@ export default async function decorate($block) {
   const $image = document.createElement('div');
   $image.classList.add('image');
   // find image
-  const $hero = doc.querySelector('body > main picture');
+  const $hero = createOptimizedPicture(picture);
   if ($hero) {
     $image.append($hero);
   }
