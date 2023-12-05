@@ -15,7 +15,7 @@ import {
   sampleRUM,
   toCamelCase,
   toClassName,
-} from '../lib-franklin.js';
+} from '../aem.js';
 
 export const DEFAULT_OPTIONS = {
   root: '/experiments',
