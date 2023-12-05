@@ -264,6 +264,27 @@ header nav .nav-sections ul > li > ul > li {
     columns: 1;
   }
 
+  header .header-topbar {
+    height: 25px;
+    background-color: black;
+    color: var(--text-color-light);
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--body-font-size-xs);
+    text-transform: uppercase;
+    padding: 0 16px;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    left: 0;
+  }
+  
+  header .header-topbar .icon {
+    height: 24px;
+    width: 34px;
+    margin-right: 6px;
+  }
+
   header nav .nav-sections > ul > li[aria-expanded="true"] > ul > li > a {
     color: #414042;
   }
