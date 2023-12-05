@@ -270,7 +270,7 @@ header nav .nav-sections ul > li > ul > li {
     color: var(--text-color-light);
     display: flex;
     justify-content: space-between;
-    font-size: var(--body-font-size-xs);
+    font-size: var(--body-font-size-xxs);
     text-transform: uppercase;
     padding: 0 16px;
     position: fixed;
