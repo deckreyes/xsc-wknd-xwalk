@@ -54,10 +54,7 @@
   --heading-font-size-xs: 16px;
 
   /* nav height */
-  --nav-height: 89px;
-  --hero-height: 60vh;
-  --article-hero-height:30vh;
-  --h3-padding: 0 10px;
+  --nav-height: 115px;
 
   /* buttons */
   --button-background-color: var(--color-yellow);
