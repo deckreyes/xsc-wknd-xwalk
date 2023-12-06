@@ -55,9 +55,6 @@
 
   /* nav height */
   --nav-height: 89px;
-  --hero-height: 60vh;
-  --article-hero-height:30vh;
-  --h3-padding: 0 10px;
 
   /* buttons */
   --button-background-color: var(--color-yellow);
