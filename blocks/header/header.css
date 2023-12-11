@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: red;
+  background-color: var(--background-color);
   color: var(--nav-color);
   width: 100%;
   z-index: 2;
@@ -180,7 +180,7 @@ header nav .nav-sections {
   flex: 1 1 auto;
   display: none;
   visibility: hidden;
-  background-color: var(--overlay-color);
+  background-color: red;
 }
 
 header nav[aria-expanded="true"] .nav-sections {
