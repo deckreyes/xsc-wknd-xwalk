@@ -406,6 +406,6 @@ header .block {
   background: rgb(4 25 45 / 55%);
   color: white;
   position: fixed;
-  top: 0px;
   width: 100%;
+  top: 0px;
 }
